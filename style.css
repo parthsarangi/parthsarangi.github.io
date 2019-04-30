@@ -142,11 +142,12 @@ section:last-child {
 }
 
 .keySkills {
+	padding-inline-start: 0%;
 	list-style-type: none;
 	-moz-column-count:3;
 	-webkit-column-count:3;
-	column-count:3;
-	margin-bottom: 20px;
+	column-count:4;
+	margin-bottom: 10%;
 	font-size: 1em;
 	color: #444;
 }
