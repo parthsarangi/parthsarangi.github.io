@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head style="height: 1200px">
+    
+</head>
+<body>
+<div>
+        <p><a href="https://parths-shiny.shinyapps.io/template_shiny/" target="myFrame">Click to Load Analytics</a></p>
+        <!-- <iframe src="demo-page.html" name="myFrame" style="width: 100%; min-height: 800px"></iframe> -->
+        <iframe src="dna_video" frameborder="0"></iframe>
+        
+</div>
+
+
+<script>
+        $(window).bind("load", function() {
+  $('#dna_video').prepend('<iframe src="//player.vimeo.com/video/86554151" width="680" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+});
+</script>
+</body>
+</html>
