@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CX Insight Agent — Parth Sarangi</title>
+  <meta name="description" content="Build brief: AI agents that write daily CX insight briefs and alert on contact-volume anomalies across chatbot, voicebot and human support at Lazada.">
+  <meta name="theme-color" content="#0e1f2f">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Parth Sarangi, home">
+        <span class="brand__mark" aria-hidden="true">PS</span>
+        <span>
+          <span class="brand__name">Parth Sarangi</span>
+          <span class="brand__role">BI &amp; AI Analytics</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="../index.html#impact">Impact</a>
+        <a href="../showcase.html" aria-current="page">Showcase</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#toolkit">Toolkit</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="nav-cv" href="../assets/cv/Parth-Sarangi-CV.pdf" download>Download CV</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn--ghost" href="../assets/cv/Parth-Sarangi-CV.pdf" download>
+          CV <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span aria-hidden="true"></span>
+      </button>
+
+      <span class="scroll-progress" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="project-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="../showcase.html">Showcase</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span aria-current="page">01 — CX Insight Agent</span>
+        </nav>
+
+        <div class="status-row">
+          <span class="status status--queued">Brief ready</span>
+          <span class="mono">Build queued · updated October 2026</span>
+        </div>
+
+        <h1>CX Insight Agent</h1>
+        <p class="lede">
+          An agent that writes the daily brief and shouts when contact volume breaks its band — across
+          chatbot, voicebot and human support. Built at Lazada to shorten the distance between a
+          signal appearing and someone acting on it.
+        </p>
+
+        <dl class="project-meta">
+          <div class="meta-cell">
+            <dt>Company</dt>
+            <dd>Lazada<br>Alibaba International Digital Commerce</dd>
+          </div>
+          <div class="meta-cell">
+            <dt>Role</dt>
+            <dd>Manager, Business Intelligence<br>AI &amp; CX Analytics Lead</dd>
+          </div>
+          <div class="meta-cell">
+            <dt>Timeframe</dt>
+            <dd>1 yr 9 mo · ongoing<br>Daily production cadence</dd>
+          </div>
+          <div class="meta-cell">
+            <dt>Stack</dt>
+            <dd>Python · SQL · LLM agents<br>MaxCompute · Tableau</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="container">
+        <div class="project-grid">
+          <aside class="project-grid__rail" aria-label="Brief details">
+            <p>Brief 01 / 04</p>
+            <p style="margin-top:10px;">Ships: dashboard<br>+ walkthrough</p>
+          </aside>
+
+          <div class="project-grid__content">
+            <p class="pull">How do you notice a contact-volume spike before it becomes a backlog?</p>
+
+            <div class="project-section">
+              <h2>The situation</h2>
+              <p>
+                Customer experience at marketplace scale runs on three channels with three different
+                rhythms. Chat spikes when a campaign lands. Voice spikes when deliveries slip. Both
+                spike again when a payment gate fails. In a weekly review, all of that arrives after
+                the queue has already formed.
+              </p>
+              <p>
+                The analytics team had the data — chat and voice logs, contact reasons, logistics
+                events, customer feedback — but the read was manual and periodic. The gap was not
+                modelling. It was the last mile: getting the interpretation to the operations lead
+                while it still mattered.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h2>Approach</h2>
+              <ol class="steps">
+                <li>
+                  <span class="step-num">01</span>
+                  <div>
+                    <h3>Define the signal</h3>
+                    <p>Set one KPI framework across chatbot, voicebot and human agents, with data-quality standards for interaction logs so the three channels could be compared at all.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">02</span>
+                  <div>
+                    <h3>Automate the read</h3>
+                    <p>AI agents generate the daily data insight and executive summary, replacing a manual sweep of contact volume, contact reasons and resolution metrics.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">03</span>
+                  <div>
+                    <h3>Alert on the exception</h3>
+                    <p>Push alerts fire when chat or voice volume breaks its normal band — the moment an operations lead needs to reallocate, not the morning after.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">04</span>
+                  <div>
+                    <h3>Predict the next spike</h3>
+                    <p>Logistics delays and customer feedback feed models that forecast contact-volume spikes, enabling proactive customer communication before the queue builds.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="project-section">
+              <h2>Evidence so far</h2>
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat__value">30%</div>
+                  <div class="stat__label">Faster response to critical issues</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__value">3</div>
+                  <div class="stat__label">Channels under one KPI frame</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__value stat__value--sm">Daily</div>
+                  <div class="stat__label">Brief and summary cadence, automated</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <h2>What ships on this page</h2>
+              <figure class="figure">
+                <div class="figure__bar">
+                  <span>Fig. 01 — Anomaly detection, wireframe</span>
+                  <span class="status status--queued">Queued</span>
+                </div>
+                <div class="figure__canvas">
+                  <svg viewBox="0 0 640 250" role="img" aria-label="Wireframe of a contact-volume chart with a normal band, two anomaly alerts and a forecast segment">
+                    <g stroke="#3d5675" stroke-width="1" stroke-dasharray="1 4">
+                      <line x1="0" y1="50" x2="600" y2="50"/>
+                      <line x1="0" y1="100" x2="600" y2="100"/>
+                      <line x1="0" y1="150" x2="600" y2="150"/>
+                      <line x1="0" y1="200" x2="600" y2="200"/>
+                    </g>
+                    <rect x="0" y="70" width="600" height="90" fill="#87a7d0" opacity="0.1"/>
+                    <line x1="0" y1="70" x2="600" y2="70" stroke="#87a7d0" stroke-width="1" stroke-dasharray="3 4" opacity="0.55"/>
+                    <line x1="0" y1="160" x2="600" y2="160" stroke="#87a7d0" stroke-width="1" stroke-dasharray="3 4" opacity="0.55"/>
+                    <path d="M0,118 L40,110 L80,124 L120,102 L160,116 L200,92 L240,106 L280,88 L320,98 L360,58 L400,48 L440,104 L480,92 L520,120 L560,112 L600,124" fill="none" stroke="#c18db4" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+                    <line x1="400" y1="48" x2="600" y2="124" stroke="#c18db4" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.4"/>
+                    <circle cx="360" cy="58" r="4" fill="#e2cad8"/>
+                    <circle cx="400" cy="48" r="4" fill="#e2cad8"/>
+                    <text x="366" y="42" font-family="IBM Plex Mono, monospace" font-size="8" letter-spacing="1" fill="#e2cad8">ALERT</text>
+                    <text x="8" y="84" font-family="IBM Plex Mono, monospace" font-size="7.5" letter-spacing="1" fill="#9fb4d0">NORMAL BAND</text>
+                    <text x="468" y="140" font-family="IBM Plex Mono, monospace" font-size="7.5" letter-spacing="1" fill="#87a7d0">FORECAST</text>
+                    <g font-family="IBM Plex Mono, monospace" font-size="7" letter-spacing="1" fill="#87a7d0">
+                      <text x="0" y="240">MON</text>
+                      <text x="96" y="240">TUE</text>
+                      <text x="192" y="240">WED</text>
+                      <text x="288" y="240">THU</text>
+                      <text x="384" y="240">FRI</text>
+                      <text x="480" y="240">SAT</text>
+                      <text x="576" y="240">SUN</text>
+                    </g>
+                    <line x1="0" y1="222" x2="600" y2="222" stroke="#4a6a8f" stroke-width="1"/>
+                  </svg>
+                </div>
+                <figcaption>Placeholder wireframe. The built chart will run on synthetic contact-volume data and ship with the dashboard file.</figcaption>
+              </figure>
+
+              <ul class="deliverables">
+                <li><span class="box" aria-hidden="true"></span>Agent architecture: source → model → brief → alert<span class="deliv-status">Queued</span></li>
+                <li><span class="box" aria-hidden="true"></span>Sample daily brief and executive summary<span class="deliv-status">Queued</span></li>
+                <li><span class="box" aria-hidden="true"></span>Anomaly precision and recall, with evaluation notes<span class="deliv-status">Queued</span></li>
+                <li><span class="box" aria-hidden="true"></span>Dashboard walkthrough — what an ops lead sees first<span class="deliv-status">Queued</span></li>
+              </ul>
+            </div>
+
+            <div class="note">
+              <strong>On the data.</strong> No Lazada production data appears on this page. The built
+              version will use a synthetic contact-volume set with the same shape and cadence, clearly
+              labelled, so the logic can be inspected without exposing customer information.
+            </div>
+          </div>
+        </div>
+
+        <nav class="project-nav" aria-label="Showcase navigation">
+          <a href="../showcase.html">
+            <span class="mono">← All briefs</span>
+            <span class="nav-title">Showcase index</span>
+          </a>
+          <a class="next" href="trading-funds-model.html">
+            <span class="mono">Next · 02</span>
+            <span class="nav-title">Trading &amp; Funds Model</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="next-cta">
+      <div class="container">
+        <div class="next-cta__inner">
+          <div>
+            <span class="mono">Same problem in production?</span>
+            <h2>Ask me how the alert threshold was set.</h2>
+          </div>
+          <a class="btn btn--solid" href="mailto:parth.sarangi@gmail.com?subject=CX%20Insight%20Agent">Start a conversation <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span data-year>2026</span> Parth Sarangi</span>
+      <span>Business Intelligence &amp; Analytics Manager · Bangkok</span>
+      <span>Static site · no trackers</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wallet Growth Reporting — Parth Sarangi</title>
+  <meta name="description" content="Build brief: SQL models and pipelines for the TrueMoney international wallet, with cross-border transfer volume and engagement reporting delivered on a quarterly cadence.">
+  <meta name="theme-color" content="#0e1f2f">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Parth Sarangi, home">
+        <span class="brand__mark" aria-hidden="true">PS</span>
+        <span>
+          <span class="brand__name">Parth Sarangi</span>
+          <span class="brand__role">BI &amp; AI Analytics</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="../index.html#impact">Impact</a>
+        <a href="../showcase.html" aria-current="page">Showcase</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#toolkit">Toolkit</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="nav-cv" href="../assets/cv/Parth-Sarangi-CV.pdf" download>Download CV</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn--ghost" href="../assets/cv/Parth-Sarangi-CV.pdf" download>
+          CV <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span aria-hidden="true"></span>
+      </button>
+
+      <span class="scroll-progress" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="project-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a href="../showcase.html">Showcase</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span aria-current="page">04 — Wallet Growth Reporting</span>
+        </nav>
+
+        <div class="status-row">
+          <span class="status status--queued">Brief ready</span>
+          <span class="mono">Build queued · updated October 2026</span>
+        </div>
+
+        <h1>Wallet Growth Reporting</h1>
+        <p class="lede">
+          Cross-border wallet volume and engagement, reported on a schedule instead of a scramble —
+          SQL models and pipelines built for the reporting layer to be available when the quarter closes.
+        </p>
+
+        <dl class="project-meta">
+          <div class="meta-cell">
+            <dt>Company</dt>
+            <dd>Ascend Corp<br>TrueMoney, Thailand</dd>
+          </div>
+          <div class="meta-cell">
+            <dt>Role</dt>
+            <dd>Senior Data<br>Service Engineer</dd>
+          </div>
+          <div class="meta-cell">
+            <dt>Timeframe</dt>
+            <dd>2 yr 8 mo<br>Quarterly reporting cycle</dd>
+          </div>
+          <div class="meta-cell">
+            <dt>Stack</dt>
+            <dd>SQL · Data pipelines<br>Reporting layer</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="container">
+        <div class="project-grid">
+          <aside class="project-grid__rail" aria-label="Brief details">
+            <p>Brief 04 / 04</p>
+            <p style="margin-top:10px;">Ships: growth trend<br>+ pipeline map</p>
+          </aside>
+
+          <div class="project-grid__content">
+            <p class="pull">How do you report cross-border wallet growth without a nightly scramble?</p>
+
+            <div class="project-section">
+              <h2>The situation</h2>
+              <p>
+                The international wallet business ran on cross-border money transfer volumes and user
+                engagement, with reporting expected every quarter. The data existed, but the path from
+                wallet events to a finished report depended on when pipelines had last run and whether
+                the reporting layer was current.
+              </p>
+              <p>
+                When business teams asked a question, the answer required a translation step between
+                them and the technical team — and a report assembled under time pressure is a report
+                with quiet caveats. The fix was structural: define the ingestion, protect the layer,
+                then report from it.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h2>Approach</h2>
+              <ol class="steps">
+                <li>
+                  <span class="step-num">01</span>
+                  <div>
+                    <h3>Model the wallet</h3>
+                    <p>Design SQL models for users, transfers, corridors and engagement so the quarterly questions map to known tables rather than ad-hoc extracts.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">02</span>
+                  <div>
+                    <h3>Make ingestion explicit</h3>
+                    <p>Manage pipeline ingestion intervals and treat the availability of the reporting layer as a requirement — not something discovered at close.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">03</span>
+                  <div>
+                    <h3>Automate the pack</h3>
+                    <p>Produce quarterly performance reporting and dashboards on cross-border transfer volumes and user engagement from a stable template.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">04</span>
+                  <div>
+                    <h3>Bridge the two sides</h3>
+                    <p>Managed local BI staff and acted as the primary liaison between business departments and technical teams, translating the question before it became a ticket.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="project-section">
+              <h2>Evidence so far</h2>
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat__value stat__value--sm">Quarterly</div>
+                  <div class="stat__label">Performance reporting and dashboards</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__value stat__value--sm">Scheduled</div>
+                  <div class="stat__label">Pipeline ingestion with a reporting layer kept available</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__value stat__value--sm">Led</div>
+                  <div class="stat__label">Local BI staff, plus business-to-technical liaison</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-section">
+              <h2>What ships on this page</h2>
+              <figure class="figure">
+                <div class="figure__bar">
+                  <span>Fig. 04 — Pipeline and growth trend, wireframe</span>
+                  <span class="status status--queued">Queued</span>
+                </div>
+                <div class="figure__canvas">
+                  <svg viewBox="0 0 640 300" role="img" aria-label="Wireframe of a reporting pipeline from wallet events to a quarterly pack, above an indexed transfer-volume trend">
+                    <defs>
+                      <marker id="arrow4" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+                        <path d="M0,0 L8,4 L0,8 Z" fill="#4a6a8f"/>
+                      </marker>
+                      <linearGradient id="walletArea" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#c18db4" stop-opacity="0.14"/>
+                        <stop offset="100%" stop-color="#c18db4" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+
+                    <g fill="#223c5c" stroke="#4a6a8f">
+                      <rect x="0" y="22" width="112" height="46" rx="1"/>
+                      <rect x="126" y="22" width="112" height="46" rx="1"/>
+                      <rect x="252" y="22" width="112" height="46" rx="1"/>
+                      <rect x="378" y="22" width="112" height="46" rx="1"/>
+                      <rect x="504" y="22" width="136" height="46" rx="1" stroke="#c18db4" fill="#c18db4" fill-opacity="0.06"/>
+                    </g>
+                    <g font-family="IBM Plex Mono, monospace" font-size="6.4" fill="#e2cad8">
+                      <text x="10" y="40">WALLET EVENTS</text>
+                      <text x="10" y="52" font-size="5.6" fill="#87a7d0">TRANSFERS · USERS</text>
+                      <text x="136" y="40">INGESTION</text>
+                      <text x="136" y="52" font-size="5.6" fill="#87a7d0">INTERVALS SET</text>
+                      <text x="262" y="40">SQL MODELS</text>
+                      <text x="262" y="52" font-size="5.6" fill="#87a7d0">CORRIDORS · COHORTS</text>
+                      <text x="388" y="40">REPORTING LAYER</text>
+                      <text x="388" y="52" font-size="5.6" fill="#87a7d0">AVAILABILITY</text>
+                      <text x="514" y="40" fill="#c18db4">QUARTERLY PACK</text>
+                      <text x="514" y="52" font-size="5.6" fill="#87a7d0">VOLUME · ENGAGEMENT</text>
+                    </g>
+                    <g stroke="#4a6a8f" stroke-width="1" marker-end="url(#arrow4)">
+                      <line x1="112" y1="45" x2="122" y2="45"/>
+                      <line x1="238" y1="45" x2="248" y2="45"/>
+                      <line x1="364" y1="45" x2="374" y2="45"/>
+                      <line x1="490" y1="45" x2="500" y2="45"/>
+                    </g>
+
+                    <text x="0" y="96" font-family="IBM Plex Mono, monospace" font-size="7.5" letter-spacing="1.2" fill="#87a7d0">CROSS-BORDER TRANSFER VOLUME · INDEXED</text>
+                    <g stroke="#3d5675" stroke-width="1" stroke-dasharray="1 4">
+                      <line x1="0" y1="120" x2="640" y2="120"/>
+                      <line x1="0" y1="166" x2="640" y2="166"/>
+                      <line x1="0" y1="212" x2="640" y2="212"/>
+                      <line x1="0" y1="258" x2="640" y2="258"/>
+                    </g>
+                    <path d="M0,244 L40,238 L80,241 L120,226 L160,230 L200,214 L240,220 L280,200 L320,206 L360,188 L400,194 L440,176 L480,182 L520,164 L560,170 L600,152 L640,158 L640,270 L0,270 Z" fill="url(#walletArea)"/>
+                    <path d="M0,244 L40,238 L80,241 L120,226 L160,230 L200,214 L240,220 L280,200 L320,206 L360,188 L400,194 L440,176 L480,182 L520,164 L560,170 L600,152 L640,158" fill="none" stroke="#c18db4" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+                    <g stroke="#4a6a8f" stroke-width="1">
+                      <line x1="160" y1="258" x2="160" y2="266"/>
+                      <line x1="320" y1="258" x2="320" y2="266"/>
+                      <line x1="480" y1="258" x2="480" y2="266"/>
+                      <line x1="640" y1="258" x2="640" y2="266"/>
+                    </g>
+                    <g font-family="IBM Plex Mono, monospace" font-size="6.4" letter-spacing="0.8" fill="#87a7d0">
+                      <text x="150" y="282">Q1</text>
+                      <text x="310" y="282">Q2</text>
+                      <text x="470" y="282">Q3</text>
+                      <text x="630" y="282">Q4</text>
+                    </g>
+                    <line x1="0" y1="258" x2="640" y2="258" stroke="#4a6a8f" stroke-width="1"/>
+                  </svg>
+                </div>
+                <figcaption>Placeholder wireframe. The built trend and pipeline will use synthetic wallet data with a labelled reporting cadence.</figcaption>
+              </figure>
+
+              <ul class="deliverables">
+                <li><span class="box" aria-hidden="true"></span>Transfer volume and engagement trend, quarterly<span class="deliv-status">Queued</span></li>
+                <li><span class="box" aria-hidden="true"></span>Pipeline map with ingestion intervals and availability windows<span class="deliv-status">Queued</span></li>
+                <li><span class="box" aria-hidden="true"></span>Quarterly report template and annotation notes<span class="deliv-status">Queued</span></li>
+                <li><span class="box" aria-hidden="true"></span>Data dictionary for wallet, corridor and engagement metrics<span class="deliv-status">Queued</span></li>
+              </ul>
+            </div>
+
+            <div class="note">
+              <strong>On the data.</strong> No TrueMoney transaction data appears here. The built
+              version will use a synthetic wallet dataset and a documented cadence, so the reporting
+              logic can be reviewed without exposing customer or transaction information.
+            </div>
+          </div>
+        </div>
+
+        <nav class="project-nav" aria-label="Showcase navigation">
+          <a href="attribution-roas.html">
+            <span class="mono">← Prev · 03</span>
+            <span class="nav-title">Attribution &amp; ROAS</span>
+          </a>
+          <a class="next" href="../showcase.html">
+            <span class="mono">Back to index</span>
+            <span class="nav-title">All four briefs</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="next-cta">
+      <div class="container">
+        <div class="next-cta__inner">
+          <div>
+            <span class="mono">Reporting question?</span>
+            <h2>Ask me what breaks a quarterly close.</h2>
+          </div>
+          <a class="btn btn--solid" href="mailto:parth.sarangi@gmail.com?subject=Wallet%20Growth%20Reporting">Start a conversation <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span data-year>2026</span> Parth Sarangi</span>
+      <span>Business Intelligence &amp; Analytics Manager · Bangkok</span>
+      <span>Static site · no trackers</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

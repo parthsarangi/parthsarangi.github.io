@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Parth Sarangi</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0e1f2f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1b48'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='26' font-weight='500' fill='%23e2cad8' text-anchor='middle'%3EPS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #e2cad8;
+      --muted: #87a7d0;
+      --accent: #c18db4;
+      --line: rgba(226, 202, 216, 0.18);
+      --serif: "Instrument Serif", Georgia, serif;
+      --mono: "IBM Plex Mono", ui-monospace, monospace;
+      --sans: "Inter", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      font-family: var(--sans);
+      color: var(--ink);
+      background:
+        radial-gradient(900px 600px at 15% -10%, rgba(39, 66, 93, 0.85), transparent 65%),
+        radial-gradient(700px 500px at 95% 10%, rgba(193, 141, 180, 0.16), transparent 70%),
+        #0e1f2f;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      width: 100%;
+      max-width: 560px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(165deg, rgba(39, 66, 93, 0.55), rgba(14, 27, 72, 0.55));
+      box-shadow: 0 40px 90px -48px rgba(0, 0, 0, 0.85);
+      padding: 44px 40px 40px;
+    }
+    .eyebrow {
+      margin: 0 0 18px;
+      font-family: var(--mono);
+      font-size: 0.64rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .code {
+      float: right;
+      font-family: var(--mono);
+      font-size: 0.64rem;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2.4rem, 8vw, 3.4rem);
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+    }
+    h1 em { font-style: italic; color: var(--accent); }
+    p {
+      margin: 0 0 28px;
+      max-width: 42ch;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: rgba(226, 202, 216, 0.78);
+    }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+    a.btn--solid {
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      color: #0e1b48;
+    }
+    a.btn--solid:hover { background: #fff; border-color: #fff; }
+    a.btn--ghost {
+      border: 1px solid var(--line);
+      color: var(--ink);
+    }
+    a.btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (max-width: 480px) {
+      main { padding: 34px 24px 30px; }
+      .links a.btn { flex: 1 1 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow"><span class="code">404</span>Ledger entry not found</p>
+    <h1>This page isn't <em>in the books.</em></h1>
+    <p>The URL may have moved, or the brief is still being written. Everything published lives one level up.</p>
+    <div class="links">
+      <a class="btn btn--solid" id="home" href="/">Back to the portfolio</a>
+      <a class="btn btn--ghost" id="showcase" href="/showcase.html">View the showcase</a>
+    </div>
+  </main>
+  <script>
+    // GitHub Pages serves this file for any missing path without rewriting the URL,
+    // so resolve the site root: project sites live at /<repo>/, user sites at /.
+    (function () {
+      var segment = location.pathname.split("/").filter(Boolean)[0];
+      var root = "/";
+      if (!segment) { return; }
+      var probe = "/" + segment + "/assets/favicon.svg";
+      fetch(probe, { method: "HEAD" }).then(function (res) {
+        if (!res.ok) { return; }
+        root = "/" + segment + "/";
+        document.getElementById("home").setAttribute("href", root);
+        document.getElementById("showcase").setAttribute("href", root + "showcase.html");
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>
